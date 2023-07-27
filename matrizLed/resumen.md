@@ -55,7 +55,7 @@ Las siguientes funciones asociadas al objecto que creamos y guardamos en la vari
     matrizLed.setRow(2, 0b10101010);
     ```
 
-    En este caso al igual que la funcion `setColumn()` no es necesario usar la funcion `clear()` para apagar los leds y encender los siguientes que queremos encender.
+    En este caso al igual que la funcion `setColumn()` no es necesario usar la funcion `clear()` para apagar y encender los leds de una misma fila.
 
 - **setColumn(r, val):** Esta funcion se encarga de encender los leds que indiquemos en una columna especifica, funciona igual que `setRow()` pero para columnas. Ej:
 
