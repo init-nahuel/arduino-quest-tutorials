@@ -8,7 +8,7 @@ La libreria utilizada para manejar la matriz led a traves del componente MAX7219
 
 Luego se debe crear un objeto de la clase `MD_MAX72xx`, para esto llamamos la funcion `MD_MAX72xx(mod, dataPin, clkPin, csPin, numDevices)`, donde los parametros que toma son:
 
-- `mod`: Indica la orientacion de la matriz led, lo cual nos servira luego para orientarnos en la posicion de los leds que queremos encender, para esto tienen cuatro opciones utiles que les pueden servir: `MD_MAX72XX::DR0CR0RR0_HW`, `MD_MAX72XX::DR0CR0RR1_HW`, `MD_MAX72XX::DR0CR1RR0_HW` ó `MD_MAX72XX::DR0CR1RR1_HW`. Pueden ir probando para ver en que posicion se enciende un led que indicaron con las coordenadas.
+- `mod`: Indica la orientacion para el eje de coordenadas que representa la posicion de los leds en la matriz, existent cuatro opciones comunes que les pueden servir: `MD_MAX72XX::DR0CR0RR0_HW`, `MD_MAX72XX::DR0CR0RR1_HW`, `MD_MAX72XX::DR0CR1RR0_HW` ó `MD_MAX72XX::DR0CR1RR1_HW`. Pueden ir probando las orientaciones encendiendo el led en la coordenada (0, 0) y fijarse donde se enciende en la matriz.
 - `dataPin`: Este es el pin DIN que tiene la matriz led y debe ir conectado a cualquiera de los pines digitales del arduino.
 - `clkPin`: Este es el pin CLK de la matriz y debe ir conectado a cualquiera de los pines digitales del arduino.
 - `csPin`: pin CS de la matriz que tambien debe ir conectado a cualquiera de los pines digitales del arduino.
