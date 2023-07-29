@@ -1,11 +1,11 @@
 #include <LiquidCrystal_I2C.h>
 
-int address = 0x20;
+int address = 0x27;
 LiquidCrystal_I2C lcd(address, 16, 2);
 int pinPlayer = 6, playerPosition = 0;
 int movePlayer = 0;
 unsigned long prevTime = millis();
-int shootingDelay = 300;
+int shootingDelay = 800;
 
 int move(int pos, LiquidCrystal_I2C lcd);
 void shooting(LiquidCrystal_I2C lcd, int playerPosition);
@@ -62,4 +62,5 @@ void shooting(LiquidCrystal_I2C lcd, int playerPosition) {
     delay(800);
     lcd.setCursor(i, bulletPos);
   }
+  lcd.print(" ");
 }
